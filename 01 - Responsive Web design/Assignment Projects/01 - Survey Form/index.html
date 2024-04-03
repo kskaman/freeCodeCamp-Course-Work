@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Course Feedback Form</h1>
+  <p id="description">Thank you for your valuable feedback.</p>
+  <form id="survey-form" method="post" action="">
+    <fieldset>
+      <label for="name" id="name-label">Name</label>
+      <input id="name" name="Name" type="text" placeholder="Enter Your Name" required/>
+
+      <label for="email" id="email-label">Email</label>
+      <input id="email" name="Email" type="email" placeholder="Enter Your Email" required/>
+
+      <label for="age" id="number-label">Age</label>
+      <input id="age" name="Age" type="number" min="16" max="50" placeholder="21" required/>
+
+      <label for="dropdown" id="education-level">What is your current level of highest education received?</label>
+      <select id="dropdown" name="Education" required>
+        <option disabled selected value>Select Your Education</option>
+        <option value="diploma">Diploma</option>
+        <option value="bachelor">Bachelor's</option>
+        <option value="master">Master's</option>
+        <option value="phd">Ph.D.</option>
+      </select>
+    </fieldset>
+  </form>
+</body>
+</html>
