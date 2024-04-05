@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1 id="title">Course Feedback Form</h1>
   <p id="description">Thank you for your valuable feedback.</p>
   <form id="survey-form" method="post" action="">
     <fieldset>
+      <legend>Personal Information</legend>
       <label for="name" id="name-label">Name</label>
       <input id="name" name="Name" type="text" placeholder="Enter Your Name" required/>
 
       <label for="email" id="email-label">Email</label>
       <input id="email" name="Email" type="email" placeholder="Enter Your Email" required/>
 
-      <label for="age" id="number-label">Age</label>
-      <input id="age" name="Age" type="number" min="16" max="50" placeholder="21" required/>
+      <label for="number" id="number-label">Age</label>
+      <input id="number" name="Age" type="number" min="16" max="50" placeholder="21" required/>
+    </fieldset>
 
-      <label for="dropdown" id="education-level">What is your current level of highest education received?</label>
+    <fieldset>
+      <legend>Education Background</legend>
+      <label for="dropdown" id="education-level">What is your highest level of education received?</label>
       <select id="dropdown" name="Education" required>
         <option disabled selected value>Select Your Education</option>
         <option value="diploma">Diploma</option>
@@ -26,6 +33,24 @@
         <option value="phd">Ph.D.</option>
       </select>
     </fieldset>
+    
+    <fieldset>
+      <legend>Learning Preferences</legend>
+      <label class="radio-label"><input type="radio" name="preference" value="online" required> Online</label>
+      <label class="radio-label"><input type="radio" name="preference" value="in-person"> In-Person</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Interested Areas</legend>
+      <label><input type="checkbox" name="interest" value="coding" required> Coding</label>
+      <label><input type="checkbox" name="interest" value="design"> Design</label>
+      <label><input type="checkbox" name="interest" value="marketing"> Marketing</label>
+    </fieldset>
+    
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" name="Comments" placeholder="Your comments"></textarea>
+    
+    <button id="submit" type="submit">Submit</button>
   </form>
 </body>
 </html>
