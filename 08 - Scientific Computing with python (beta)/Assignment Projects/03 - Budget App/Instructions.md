@@ -17,7 +17,7 @@ Complete the `Category` class. This class is part of a budget application, where
   - `withdraw(amount, description="")`: Similar to the deposit method, but stores the amount as a negative number in the ledger. Returns `True` if the withdrawal took place, and `False` otherwise.
   - `get_balance()`: Returns the current balance of the budget category based on the deposits and withdrawals that have occurred.
   - `transfer(amount, destination)`: Transfers an amount to another budget category. Adds a withdrawal to the current category's ledger and a deposit to the destination category's ledger with respective descriptions. Returns `True` if the transfer took place, and `False` otherwise.
-  - `check_funds(amount)`: Returns `False` if the amount is greater than the balance of the budget category and `True` otherwise.
+  - `check_funds(amount)`: Returns `False` if the amount is greater than the balance of the budget category and `True` otherwise. This method should be used by both the withdraw method and transfer method.
 
 - **String Representation**:
   - When the budget object is printed, it should display:

@@ -30,6 +30,7 @@ This project involves using object-oriented programming to create a `Rectangle` 
 - **Methods**:
   - `set_side(self, side)`: Sets both the width and height to the given side length.
   - Inherits all methods from `Rectangle` but ensures that any changes to width or height apply to both due to the nature of a square.
+  - Additionally, the set_width and set_height methods on the Square class should set both the width and height.
   
 - **String Representation**:
   - When a `Square` instance is printed, it should display in the format: `Square(side=X)`
